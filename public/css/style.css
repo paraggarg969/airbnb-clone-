@@ -57,7 +57,11 @@ body{
 }
 
 /* cards */
+<<<<<<< HEAD
 .card{
+=======
+.listing-card{
+>>>>>>> d4feffde351e6f5caed6a4ea85f4d9b5289bdffb
     border: none !important;
     margin-bottom: 2rem;
 }

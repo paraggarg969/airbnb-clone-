@@ -2,6 +2,7 @@
 <div class="row mt-3">
   <div class="col-8 offset-2">
     <h3>Create a New Listing</h3>
+<<<<<<< HEAD
     <form method="POST" action="/listings">
 
       <div class="mb-3">
@@ -9,12 +10,29 @@
         <input name="listing[title]" placeholder="Add a catchy title" type="text" class="form-control" />
       </div>
       
+=======
+    <form method="POST" action="/listings" novalidate class="needs-validation"> 
+
+      <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input name="listing[title]" placeholder="Add a catchy title" type="text" class="form-control" required/>
+        <div class="valid-feedback">Title looks good</div>
+      </div>
+      
+      
+>>>>>>> d4feffde351e6f5caed6a4ea85f4d9b5289bdffb
       <div class="mb-3">
         <label for="description" class="form-label">Description</label>
         <textarea
           name="listing[description]"
           class="form-control"
+<<<<<<< HEAD
       ></textarea>
+=======
+          required
+      ></textarea>
+      <div class="invalid-feedback">Please enter a short description</div>
+>>>>>>> d4feffde351e6f5caed6a4ea85f4d9b5289bdffb
       </div>
 
       <div class="mb-3">
@@ -30,12 +48,22 @@
       <div class="row">
         <div class="mb-3 col-md-4">
           <label for="price" class="form-label">Price</label>
+<<<<<<< HEAD
           <input name="listing[price]" placeholder="1200" type="number" class="form-control" />
+=======
+          <input name="listing[price]" placeholder="1200" class="form-control" required/>    <!--type="number"-->
+          <div class="invalid-feedback">Please enter a valid Price</div>
+>>>>>>> d4feffde351e6f5caed6a4ea85f4d9b5289bdffb
         </div>
   
         <div class="mb-3 col-md-8">
           <label for="country" class="form-label">Country</label>
+<<<<<<< HEAD
           <input name="listing[country]" placeholder="India" type="text" class="form-control" />
+=======
+          <input name="listing[country]" placeholder="India" type="text" class="form-control" required/>
+          <div class="invalid-feedback">Please enter the country name</div>
+>>>>>>> d4feffde351e6f5caed6a4ea85f4d9b5289bdffb
         </div>
       </div>
       
@@ -46,7 +74,13 @@
         placeholder="Hisar, Haryana"
         type="text"
         class="form-control"
+<<<<<<< HEAD
       />
+=======
+        required
+      />
+      <div class="invalid-feedback">Location should be vaild</div>
+>>>>>>> d4feffde351e6f5caed6a4ea85f4d9b5289bdffb
       </div>
       
       <button class="btn btn-dark add-btn mt-3">Add</button>
